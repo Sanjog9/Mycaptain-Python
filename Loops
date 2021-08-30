@@ -1,0 +1,9 @@
+list_1 = [17, 6, 15, 0, -1, -3, 25, -13]
+
+print("The positive numbers are: ")
+
+for num in list_1:
+
+    if num >= 0:
+
+        print(num)
