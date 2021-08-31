@@ -1,0 +1,16 @@
+def most_frequent(str):
+  d = {}
+  
+  sset=sorted(list(set(str)))
+  
+  for i in sset:
+    v = str.count(i)
+    d[i] = v
+    
+  new_d = sorted(d.items(), key=lambda kv: kv[1], reverse=True)
+ 
+  for i in new_d:
+    print(i[0], "=", i[1], end=" ")
+
+str = input("Please enter a string:").lower()
+most_frequent(str)
