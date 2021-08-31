@@ -1,0 +1,12 @@
+num = int(input("Enter a positive integer:"))
+z = 0
+x, y = 0, 1
+
+print(x, y, sep=",", end=",")
+
+while z < num:
+  inc = x + y
+  print(inc, end=",")
+  x = y
+  y = inc
+  z += 1
